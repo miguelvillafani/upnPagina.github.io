@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exmec, compras de calidad</title>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        
+        <link rel = "icon" href = "images//logo.png" type = "image/png">
+
+
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+     
+             
+	            
+	            <link rel="stylesheet" href="estilos.css"> <!--ENLAZAR HOJAS DE ESTILO CSS A HTML-->
+	            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> <!--link de la fuente de letra que usaremos en nuesttra pagina web de google fonts -->
+              
+
+    </head>
+    <body>
+        <!-- CABECERA -->
+        <header class = "header" id = "header"> <!--ID HEADER, Este ID está asociado a la etiqueta <header>, que representa la cabecera de nuestra página web-->
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>EXMEC STORE</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENÚ<i class = "fas fa-bars"></i></span> <!--fas fa-bars es el icono de font awesome, icono de la barra de menú, esta con ese nombre-->
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>ELEGANCIA EN CADA DETALLE, ORDEN EN CADA ESPACIO</h2>
+                <button type = "button" class = "head-btn">BIENVENIDOS</button>
+            </div>
+        </header>
+        <!-- FIN DE LA CABECERA -->
+
+        <!-- Barra desplegable -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i> <!--fas fa-times es el icono de font awesome, icono de la X dentro de la barra desplegable del menú, esta con ese nombre-->
+            </span>
+
+            <ul class = "navbar">
+                <h1>OPCIONES</h1>
+                <li><a href = "#header">Inicio</a></li>
+                <li><a href = "#promociones">Promociones</a></li>
+                <li><a href = "#productos">Productos</a></li>
+                <li><a href = "#opiniones">Opiniones</a></li>
+                <li><a href = "#formulario">Contacto</a></li>
+                <li><a href = "#nosotros">Acerca de Nosotros</a></li>
+
+            </ul>
+            <!--BOTONES DE LOGIN Y SIGN UP DE LA BARRA DESPLEGABLE-->
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <br><br>
+        <!-- FIN DE BARRA DESPLEGABLE -->
+
+        <!-- PROMOCIONES, HTML SUSTRAIDO DE SLIDES DE BOOSTRAP -->
+        <section>
+
+            <!--CSS del propio SLIDE DE Boostrap-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+            <!--Bootstrap proporciona una clase llamada container-fluid que se utiliza para crear un contenedor completo
+            que ocupa todo el ancho de la ventana del navegador-->
+            <div class="container-fluid" id="promociones">
+                <div class = "title">
+                    <h2>PROMOCIONES</h2>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <!-- se mostrará como un bloque y "w-100" significa que ocupará el 100% del ancho
+                             del contenedor padre (en este caso, el elemento del carrusel).-->
+                        <img src="images/promociones/prom2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/promociones/prom3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/promociones/prom4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <!--Esta estructura es típica en Bootstrap para los controles de carrusel, donde se utiliza data-bs-target 
+                        para indicar a qué carrusel se aplica el control.-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <!--se utiliza para indicar si un elemento es visible o no para los lectores de pantalla-->
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+            </div>
+            <br><br>
+        </section>
+        
+        <!-- Bloque Informacion-->
+       
+    
+
+
+        <section class = "productos" id = "productos">
+            
+            <div class = "title">
+                <h2>PRODUCTOS</h2>
+            </div>
+            <div class="wrap">
+                <h1>Seleccione un producto</h1>
+                <div class="store-wrapper">
+                    <div class="category_list">
+                        <a href="#productos" class="category_item" category="all">Todo</a>
+                        <a href="#productos" class="category_item" category="Colgadores">Colgadores</a>
+                        <a href="#productos" class="category_item" category="Exhibidores">Exhibidores</a>
+                        <a href="#productos" class="category_item" category="Estanterias">Estanterias</a>
+                        <a href="#productos" class="category_item" category="Maniquies">Maniquies</a>
+                        <a href="#productos" class="category_item" category="PortaRelojes">Porta Relojes</a>
+                        <a href="#productos" class="category_item" category="PortaZapatos">Porta Zapatos</a>
+                    </div>
+                    <section class="products-list">
+                        <div class="product-item" category="Colgadores">
+                            <img src="images/productos/Colgadores/Polera marmoleado madera varon.jpg" alt="" >
+                            <a href="#producto"></a>
+                        </div>
+                        <div class="product-item" category="Colgadores">
+                            <img src="images/productos/Colgadores/Polera pana corazon negro.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Colgadores">
+                            <img src="images/productos/Colgadores/Polera pana corazon fuxia.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Colgadores">
+                            <img src="images/productos/Colgadores/Colgador Blanco con Pinzas doradas.jpg" alt="" >
+                            <a href="#producto"></a>
+                        </div>
+                        <div class="product-item" category="Colgadores">
+                            <img src="images/productos/Colgadores/Polera Graduable Blanco Niño.jpg" alt="" >
+                            <a href="#producto"></a>
+                        </div>
+                        <div class="product-item" category="Colgadores">
+                            <img src="images/productos/Colgadores/Portachalina Individual Plastico.jpg" alt="" >
+                            <a href="#producto"></a>
+                        </div>
+                        <div class="product-item" category="Exhibidores">
+                            <img src="images/productos/Exhibidores/Exhibidor ropa interior de metal amarillo.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Exhibidores">
+                            <img src="images/productos/Exhibidores/Exhibidor ropa de baño metal amarillo con busto.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Exhibidores">
+                            <img src="images/productos/Exhibidores/Coletero cromado de 3 pisos.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Exhibidores">
+                            <img src="images/productos/Exhibidores/Modular Cuadradi negro.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Exhibidores">
+                            <img src="images/productos/Exhibidores/Modular negro para medias.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/Maniquie bebe.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/Maniquie bebe 2.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/maniquie bebe 3.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/maniquie bebe 4.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/Maniquie con base y luz.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/maniquies entero varon de 1.87 m.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/Moldeado pompis varon.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/pechera lady.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/Pechera 3.4 blanco y piel.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Maniquies">
+                            <img src="images/productos/Maniquies/Pechera varon plastico plomo.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Estanterias">
+                            <img src="images/productos/Estanteria/modular 3 torre niveles color madera.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Estanterias">
+                            <img src="images/productos/Estanteria/Modular 3 Torre pisos dorado.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Estanterias">
+                            <img src="images/productos/Estanteria/Modular 3 Torres Hexagonal.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Estanterias">
+                            <img src="images/productos/Estanteria/Modular 7 repisas blanco.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Estanterias">
+                            <img src="images/productos/Estanteria/Mueble circular dorado 1 piso.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="Estanterias">
+                            <img src="images/productos/Estanteria/Soporte para tubo 30cm dorado.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="PortaZapatos">
+                            <img src="images/productos/PortaZapatos/Acrilico c.caida Colores.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="PortaZapatos">
+                            <img src="images/productos/PortaZapatos/Acrilico Colita d Chancho Verde.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="PortaZapatos">
+                            <img src="images/productos/PortaZapatos/Cubo dorado con caida.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="PortaZapatos">
+                            <img src="images/productos/PortaZapatos/Parante vestir 20cm para niño acrilico verde.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                        <div class="product-item" category="PortaRelojes">
+                            <img src="images/productos/PortaRelojes/PortaReloj nm verde.jpg" alt="" >
+                            <a href="#"></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!---->
+
+        <section class = "customers" id = "opiniones">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2 class="opi">Opiniones</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span><!--FONT AWESOME ICONOS DE LAS ESTRELLAS -->
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>Nos encanta....</h3>
+                        <p> "¡Simplemente encantador! Estoy
+                            absolutamente enamorado de los
+                            maniquíes para bebés de esta tienda.
+                            Son adorables y hacen que nuestras
+                            prendas de ropa para bebés luzcan
+                            aún más hermosas"</p>
+                        <img src = "images/bebe.jpeg" alt = "customer image">
+                        <span>Baby Kids, Callao</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span><!--FONT AWESOMEN ICONOS DE LAS ESTRELLAS, PERO EL FAR ES UNA ESTRELLA  VACIA-->
+                        </div>
+                        <h3>Elegancia y Durabilidad...</h3>
+                        <p> "El soporte de zapatos de esta tienda
+                            es simplemente fenomenal. Como un
+                            amante de las zapatillas, necesitaba
+                            una solución para exhibir y organizar
+                            mi creciente colección. Estos
+                            soportes son perfectos"</p>
+                        <img src = "images/zapato.jpeg" alt = "customer image">
+                        <span>Nike's Jhon, Lince</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span><!--FONT AWESOMEN ICONOS DE LAS ESTRELLAS, PERO EL FAR ES UNA ESTRELLA  VACIA-->
+                            <span><i class = "far fa-star"></i></span><!--FONT AWESOMEN ICONOS DE LAS ESTRELLAS, PERO EL FAR ES UNA ESTRELLA  VACIA-->
+                        </div>
+                        <h3>Muy bueno pero tiene que mejorar en...</h3>
+                        <p> "El soporte de relojes de esta relojería es
+                            funcional, pero podría mejorar. Cumple su
+                            propósito de exhibir relojes, pero la calidad y
+                            el diseño son un poco básicos. Los materiales
+                            podrían ser más resistentes, y la estética del
+                            soporte podría ser más atractiva.</p>
+                        <img src = "images/reloj.jpeg" alt = "customer image">
+                        <span>Don TitoRelojes, Breña</span>
+                    </div>
+                    
+                    <!-- end of single customer -->
+                </div>
+            </div>
+           
+        </section>
+        <!-- end of body content -->
+        <br><br>
+        
+
+       
+     <section >
+        <h3></h3>
+        <form class="formulario" id="formulario">
+            <fieldset>
+                <legend>CONTACTÁNOS LLENANDO TODOS LOS CAMPOS</legend>
+              
+                  <div class="contenedor-campos">
+                        <div class="campo">
+                          <label>Nombre del Producto</label>
+                          <input class="input-text" type="text" placeholder="Nombre"> <!--el placeholder, es el texto o titulo que tendrá el textarea-->
+                        </div>
+  
+                       <div class="campo">
+                         <label>Teléfono</label>
+                          <input class="input-text" type="text" placeholder="Telefono">
+                       </div>
+               
+                        <div class="campo">
+                          <label> Gmail </label>
+                          <input class="input-text" type="text" placeholder="Correo">
+                        </div>
+ 
+                        <div class="campo">
+                           <label> Mensaje</label>
+                           <textarea class="input-text"></textarea>
+                        </div>
+                  </div> <!--.contenedor-campos-->
+
+
+                   <div class="alinear-derecha flex"> <!--Esta clase parece indicar que el contenido dentro de este contenedor debe alinearse a la derecha
+                               y el flex para alinear los elementos hijos dentro de ese contenedor -->
+                      <input  class="boton" type="submit" value="Enviar">
+                   </div>
+        
+            </fieldset>
+     
+        </form>
+        </div>
+        <br><br>
+
+
+
+        <!-- footer -->
+        <footer class = "footer" id="nosotros">
+            <div class = "footer-container">
+                <div>
+                    <h2>Acerca de nosotros </h2>
+                    <p>Somos una empresa dedicada la decoración,
+                        fabricación y venta de artículos para locales
+                        comerciales, con la experiencia y capacidad
+                        para dar servicio al mercado actual.
+                        </p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i><!--iconos de google fonts, iconos de twitter en el footer-->
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i><!--iconos de google fonts, iconos de facebook en el footer-->
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i><!--iconos de google fonts, iconos de instagram en el footer-->
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Inicio</a>
+                    <a href = "#">Productos</a>
+                    <a href = "#">Promociones</a>
+                    <a href = "#">Contacto</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Carrera</a>
+                    <a href = "#">Acerca de nosotros</a>
+                    <a href = "#">Contáctanos</a>
+                    <a href = "#">Servicios</a>
+                </div>
+
+                <div>
+                    <h2>Preguntas</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i> <!--iconos de google fonts, iconos de la ubicacion en el footer-->
+                        </span>
+                        <span>
+                            Jirón Antonio Baso 664, 
+                            La Victoria.
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i><!--iconos de google fonts, iconos del telefono en el footer-->
+                        </span>
+                        <span>  
+                            065 26-40-61
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i><!--iconos de google fonts, iconos del correo  en el footer-->
+                        </span>
+                        <span>          
+                            ExmecLaVictoria@hotmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+
+
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

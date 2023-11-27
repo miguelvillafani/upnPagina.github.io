@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+body {
+    color: white; /* Cambia este color al tono de gris que desees */
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{ /*Almacenamiento de los colores o funciones a utilizar en la pagian web*/
+    --transition: all 2.4s ease;
+    --transition1: all 1.0s ease; /*velocidad por segundo del hover*/
+    --yellow: #f9d342;
+    --dark: #292826;
+    --gray: #686868;
+}
+.site-name,.site-nav{
+    font-size: 1.5rem; /*Agrandar texto nombre de sitio y navbar Menu*/
+}
+*{ /*ESTO AFECTA A TODOS LOS TEXTOS H1 O P, PARA TENER LA FUENTE SERIF, DE GOOGLE APIS DEL URL QUE SE ENCUENTRA AL INICIO DE ESTE CSS*/ 
+    font-family: 'Playfair Display', serif; 
+}
+/*FORMULARIO*/
+/* FORMULARIO */
+.formulario{
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid black; /* Añade esta línea para establecer el borde del formulario */
+}
+.formulario fieldset {
+    border: none;
+}
+/* Resto de tu código */
+
+.formulario legend { /*contactanos llenando todos los ...*/
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase; /*Letra en mayusculas*/
+    font-weight: 700; /*grosor negrita*/
+    margin-bottom: 2rem; /*espacio de margenes*/
+    color: hsl(45, 100%, 51%);
+}
+/*CAMPOS DEL FORMULARIO*/
+.campo {
+    margin-bottom: 1rem;/*separación entre cada campo*/
+}
+.campo label {/*Propiedades para los label de cada campo*/
+    color: rgb(40, 39, 39);
+    font-weight: bold;
+    margin-bottom: 2rem;/*separación entre label y textarea*/
+}
+.campo textarea { /*Tamaño o altura de los textareas*/
+    height: 12rem;
+}
+.input-text {
+    width: 100%;
+    border: 1px solid black; /* Añade esta línea para establecer el borde de los campos de texto */
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+/*FIN DE LOS CAMPOS FORMULARIO*/
+/*BÓTON ENVIAR DEL FORMULARIO*/
+/* Estilo del botón "Enviar" */
+.boton {
+    background-color: var(--gray); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 15px 30px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cursor al pasar el ratón */
+    transition: var(--transition); /* Transición suave */
+    text-align: center;
+}
+/*FIN DEL BOTON ENVIAR DEL FORMULARIO*/
+
+/*BOTON SIGN UP Y LOG IN*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Botones Sign up y log in de menu desplegable*/
+.btn.sign-up,
+.btn.log-in {
+    background: var(--yellow);
+    color: #fff;
+    border: none; /*botones sin borde*/
+    border-radius: 5px; /*radio del borde del boton*/
+    padding: 10px 20px; /*altura y anchura de los botones*/
+    cursor: pointer;
+    transition: var(--transition); /*tiempo de transicion del hover, al pasar cursor*/
+    margin: 10px 15px; /*margenes que tendra los botones en la barra desplegable*/
+}
+
+/*Otras propiedades de los botones Log in y sign up del menu desplegable*/
+.btn  {
+    font-size: 16px;
+    text-transform: uppercase; /*ponerlo en mayusculas*/
+    font-weight: 600; /*grosor del texto del boton*/
+    border: none; /*sin borde*/
+    border-radius: 5px; /*redondez de los bordes*/
+    padding: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+  
+.flex{ /*Propiedades flex del head-bottom flex ELEGANCIA EN CADA DETALLE, ORDEN EN CADA ESPACIO*/
+    display: flex; /*Establece el contenedor como un contenedor flexible, 
+    lo que permite que sus elementos secundarios se posicionen y se dimensionen más fácilmente.*/
+    flex-direction: column; /*Define la dirección principal del contenedor como una columna.
+    Los elementos secundarios se colocarán en una columna de arriba a abajo.*/
+    justify-content: center; /*En este caso, se centran a lo largo del eje transversal (vertical) porque la dirección principal es una columna.*/
+    align-items: center; /* En este caso, se centran a lo largo del eje principal (horizontal) porque la dirección principal es una columna.*/
+}
+
+
+img{ /*imagenes de los clientes*/
+    width: 100%;
+    display: block;
+}
+@media(max-width: 500px){ /*para que tambien afecte a talbets y celulares*/
+    body{
+        font-size: 14px;
+    }
+}
+
+/* CABECERA O HEADER DE LA PAGINA WEB */
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("images/negocio.jpeg") center/cover no-repeat;/* indica que la imagen de fondo debe centrarse, cubrir toda el área, y no repetirse.*/
+    min-height: 100vh;/*Establece la altura mínima del encabezado a 100vh (100% de la altura de la ventana*/
+    color: #c2bfbf;
+    padding: 25px;/*se añaden 25 píxeles de relleno en todos los lados.*/
+    display: flex; /*organizar de una mejor manera los elementos dentro del contenedor Header*/
+    flex-direction: column; /*Ubicacion alado derecho*/
+    align-content: stretch; /* los elementos se estirarán para ocupar todo el espacio disponible*/
+}
+.head-top{ /*nombre del sitio*/
+    display: flex; /*se ajustará a los tamaños y especificaciones del Header, se onvertirá en un contenedor flexible*/
+    justify-content: space-between; /*espacio entre menu y exmec*/
+    align-items: center;
+}
+.head-top span{ /*EXMEC STORE LABEL*/
+    cursor: pointer;
+    letter-spacing: 2px; /*espacio entre las letras*/
+    transition: var(--transition);
+}
+.head-top span:hover{ /*hover del EXMEC STORE*/ 
+    color: var(--yellow);
+}
+.head-bottom{ /*Posicion del texto ELEGANCIA EN CADA DETALLE...*/
+    flex: 1; /*puede crecer para ocupar espacio adicional dentro del contenedor flexible*/
+    text-align: center;
+    width: 80vw; /*Establece el ancho del elemento al 80% del ancho de la ventana.*/
+    margin: 0 auto;/*Establece un margen de 0 en la parte superior e inferior y 
+    automáticamente centra el elemento horizontalmente utilizando auto para los márgenes izquierdo y derecho.*/
+}
+.head-bottom h2{ /*Propiedades del texto ELEGANCIA EN CADA DETALLE...*/
+    padding: 22px 0; /*Establece un relleno de 22 píxeles en la parte superior e inferior del elemento h2, 
+    y 0 píxeles en los lados izquierdo y derecho.*/
+    font-size: 45px;
+    border-bottom: 1px solid #fff;
+}
+
+.head-btn{ /*Propiedades y funcionalidades del Boton BIENVENIDOS*/
+    margin: 20px 0; /*Establece un margen de 20px en la parte superior e inferior del elemento.*/
+    font-size: 20px; /* Define el tamaño de la fuente como 20px.*/
+    font-weight: bold; /*Aplica negrita al texto.*/
+    border: 3px solid #fff; /*Crea un borde sólido de 3px de ancho y color blanco (#fff).*/
+    background: transparent; /*Fondo trasero del boton bienvenidos será transparente*/
+    padding: 13px 20px; /* Define el relleno interno del elemento. En este caso, hay 13px de relleno en la parte superior y inferior, 
+    y 20px en los lados izquierdo y derecho*/
+    background: rgba(0, 0, 0, 0.3); /*Establece el fondo del botón como un color negro semi-transparente con un nivel de opacidad del 30%.*/
+    color: #fff;
+    cursor: pointer;
+
+}
+
+@media(max-width: 500px){ /*Tablets y celulares, tamaños para el boton, h2 y p Bienvenidos*/
+    .head-btn{
+        font-size: 17px;
+    }
+    .head-bottom h2{
+        font-size: 28px;
+    }
+}
+
+/* Barra desplegable */
+.sidenav{
+    background: var(--dark); /*Establece el color de fondo del menú lateral */
+    color: #fff;
+    position: fixed; /* Fija la posición del menú lateral.*/
+    top: 0; /*Coloca el menú en la parte superior de la ventana*/
+    bottom: 0; /*Hace que el menú ocupe toda la altura de la ventana , desde la parte superior hasta la parte inferior.*/
+    right: -100%; /* Inicialmente coloca el menú fuera del área visible de la pantalla estableciendo su posición derecha fuera de la ventana.*/
+    width: 300px;/*Define el ancho del menú lateral en 300 píxeles.*/
+    padding: 20px;
+    transition: var(--transition1);
+    z-index: 10;
+}
+
+/*Mostrar barra desplegable*/
+.sidenav.show{
+    right: 0;
+}
+/*Propiedades del boton X de cancelar*/
+.cancel-btn{
+    position: absolute;
+    right: 25px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--transition1);
+}
+
+/* Barra de opciones Menú */
+.navbar {
+    margin-top: 50px; /* Espacio superior de 50px */
+    list-style: none; /*  significa que no se mostrarán marcadores o numeración en los elementos de la lista ul */
+    padding: 12px; /* Espaciado interno de 12px */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    align-items: center; /* Alinea los elementos a la izquierda */
+}
+
+.navbar li a {
+    color: #fff; /* Color del texto blanco */
+    text-decoration: none; /* Elimina la decoración de texto (subrayado) */
+    padding: 15px 0; /* Espaciado interno de 15px arriba y abajo, 0 a los lados */
+    display: block; /* Hace que los elementos de lista se comporten como bloques */
+    border-bottom: 0.5px solid rgba(249, 211, 66, 0.3); /* Línea de separación sutil debajo de cada opción */
+    letter-spacing: 1.5px; /* Espaciado entre letras */
+    transition: var(--transition); /* Transición suave definida en la variable --transition */
+}
+
+/* Media query para la barra desplegable, ajustando el ancho en tablets o celulares */
+@media (max-width: 400px) {
+    .sidenav {
+        width: 100vw; /* Establece el ancho al 100% del viewport width */
+    }
+}
+
+
+/* Propiedades para los titles de Títulos como Productos, promociones, opiniones, etc */
+.title{
+    text-transform: uppercase;/*textos en mayusculas*/
+    letter-spacing: 2px;
+    font-size: 60px;
+    color:rgb(31, 26, 26);
+    border-bottom: 5px solid var(--dark); /*Agrega un borde en la parte inferior del elemento con un grosor de 5 píxeles
+     y un color definido por la variable --dark*/
+    width: 235px;/* Fija el ancho del elemento en 235 píxeles.*/
+    margin: 15px 0;/* Establece márgenes de 15 píxeles en la parte superior e inferior del elemento y 0 en los lados izquierdo y derecho.*/
+}
+/*Media quire para tablets y celulares en el tamaño de las clase title, etiquetas H2*/
+@media(min-width: 992px){
+  
+    .title h2{
+        font-size: 20px!important;
+    }
+}
+@media(max-width: 500px){
+    .title h2{
+        font-size: 24px;
+    }
+}
+
+/* clientes */
+.opi{
+    color: white !important;
+}
+.customers{
+    margin-top: 40px; /*Establece un margen en la parte superior del elemento de 40 píxeles.*/
+    padding: 40px 0; /*Establece un relleno interno (padding) de 40 píxeles en la parte superior e inferior del elemento y 0 en los lados izquierdo y derecho.*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fondito.jpg") center/cover no-repeat fixed;/* Establece un fondo compuesto 
+    por un degradado lineal transparente (rgba(0, 0, 0, 0.5)) y una imagen ubicada en el centro con escala de cobertura (cover). 
+    La imagen proviene del archivo "fondito.jpg". La propiedad fixed asegura que el fondo permanezca fijo incluso al hacer scroll.*/
+}
+.customer{
+    background: #fff; 
+    padding: 35px; /*Establece un relleno interno de 35 píxeles en todos los lados del elemento.*/
+    text-align: center; /*alinea al centro*/
+    margin: 24px 0; /* Establece un margen externo de 24 píxeles en la parte superior 
+    e inferior del elemento y 0 en los lados izquierdo y derecho*/
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: var(--transition);
+}
+/*estrellas rating*/
+.rating{
+    margin: 10px 0; /*Establece un margen de 10 píxeles en la parte superior e inferior del elemento con la clase 
+    .rating. Esto puede ayudar a dar espacio alrededor del elemento para mejorar la presentación visual.*/
+    color: var(--yellow);
+}
+.customer h3{
+    font-size: 25px;
+}
+.customer p{
+    opacity: 0.7; /*Establece la opacidad del texto a 0.7, lo que significa que el texto tendrá un aspecto ligeramente transparente.*/
+    line-height: 1.8; /*Define la altura de línea del texto. En este caso, se establece en 1.8, lo que indica que la altura de línea es 1.8 
+    veces la altura de la fuente.*/
+    width: 60%; /* Esto controlará la anchura del texto dentro del contenedor.*/
+    margin: 0 auto; /*Establece un margen cero en la parte superior e inferior y un margen automático a la izquierda y a la derecha.
+    Esto centrará el elemento horizontalmente dentro de su contenedor.*/
+}
+.customer img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 25px auto;
+}
+.customer span{
+    font-weight: 700; /*: Establece el grosor de la fuente a 700, lo que generalmente se asocia con el peso de la fuente "negrita".
+    Esto hará que el texto dentro del <span> tenga un aspecto más grueso y oscuro.*/
+    opacity: 0.7;/*Establece la opacidad del texto a 0.7, lo que significa que el texto tendrá un aspecto ligeramente transparente.*/
+}
+.customer:hover{
+    transform: translateY(-18px); /* TRANSICIÓN DE CONTAINER CLIENTES */
+}
+@media(min-width: 992px){
+    .customers-container{
+        display: grid; /* Establece que el contenedor con la clase .customers-container se comportará como una cuadrícula.*/
+        grid-template-columns: repeat(2, 1fr); /*Configura las columnas de la cuadrícula para que haya dos columnas, 
+        cada una ocupando una fracción igual del espacio disponible (1fr).*/
+        grid-gap: 30px; /* Establece un espacio de separación de 30 píxeles entre las columnas de la cuadrícula.*/
+    }
+}
+@media(min-width: 1370px){ /*Esta regla se aplica solo cuando el ancho de la ventana es igual o mayor a 1370 píxeles.*/
+    .customers-container{
+        display: grid; /*se comportará como una cuadrícula.*/
+        grid-template-columns: repeat(3, 1fr);/*En este caso, define que habrá tres columnas en la cuadrícula, y cada una ocupará 
+        una fracción igual del espacio disponible (1fr). El valor repeat(3, 1fr) significa "repetir tres veces una fracción igual (1fr)".*/
+    }
+}
+@media(max-width: 500px){
+    .customer p{
+        width: 100%;
+    }
+    .customer img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* footer */
+.footer{
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+}
+.footer-container{
+    width: 95vw;
+    margin: 0 auto;
+    padding: 30px 0; /*separacion entre bloque nosotros y labels*/
+}
+.footer-container p, .footer-container a, .footer-container span{
+    opacity: 0.8;
+}
+.footer a{
+    display: block; /*se conviertan en bloques, uno debajo del otro*/
+    color: #fff;
+    text-decoration: none; /*Elimina la decoración de texto predeterminada de los enlaces, como subrayado*/
+}
+.social-icons{
+    display: flex; /*Establece el contenedor como un contenedor flexible,
+    lo que permite usar propiedades de diseño flexibles en sus elementos secundarios.*/
+    padding: 15px 0;/*Agrega un relleno (padding) de 15 píxeles arriba y abajo al contenedor.
+    Esto proporciona espacio alrededor de los íconos sociales.*/
+    justify-content: center; /* Centra los íconos sociales  */
+}
+.social-icons li{ /*contornos redes sociales*/
+    margin: 0 10px; /*Establece márgenes a los lados de cada elemento li, proporcionando espacio entre ellos.*/
+    /*significa que no hay margen en la parte superior o inferior del elemento li (0), pero hay un margen de 10px en el lado derecho e izquierdo.*/
+    width: 50px; /*anchura de 50 px */
+    height: 50px; /*altura de 50 px*/
+    background: #2e2e2e; /*color de los iconos*/
+    border-radius: 50%; /*Aplica un radio de borde para redondear las esquinas, creando un efecto circular debido al valor 50%*/
+    transition: var(--transition); /*Agrega una transición suave a las propiedades que cambian con el tiempo, que está arriba en root*/
+    cursor: pointer; /*cursor cambia a puntero, al pasar sobre ella*/
+}
+.social-icons li:hover{ 
+    background: #fff; /*al pasar el punero se hará blanco*/ 
+    color: #2e2e2e; /*al terminar el hover, los iconos se haran negros*/
+}
+.contact-item span{ /*todos los iconos de contact item span se ubicarán en bloques, uno debajo del otros*/
+    display: block;
+}
+@media(min-width: 900px){
+    .footer-container{
+        display: grid; /*está aplicando un diseño de cuadrícula a los elementos con la clase .footer-container*/
+        grid-template-columns: repeat(2, 1fr);/*Configura las columnas de la cuadrícula para que haya dos columnas, 
+        cada una ocupando una fracción igual del espacio disponible (1fr).*/
+        grid-gap: 20px; /* y un espacio de 20px entre las columnas 
+        (grid-gap: 20px;).*/
+    }
+}
+@media(min-width: 1170px){ /*Al estar la pantalla en 1170 px*/
+    .footer{ 
+        text-align: left; /*el footer se alineará a la izquierda*/
+    }
+    .social-icons{
+        justify-content: left;  /*los iconos se justificarán, su posición se fijará a la izquierda*/
+    }
+    .footer-container{
+        grid-template-columns: repeat(4, 1fr); /*Configura las columnas de la cuadrícula para que haya 4 columnas, 
+        cada una ocupando una fracción igual del espacio disponible (1fr).*/
+    }
+    .footer-container div:nth-child(1) p{ /*Selecciona el primer hijo div del elemento con la clase footer-container.*/
+        /*p: Selecciona cualquier elemento p que sea descendiente directo del primer div seleccionado.*/
+        padding-right: 85px; /*l estilo que se aplica es un relleno de 85px en el lado derecho del párrafo.
+        Este relleno crea un espacio en blanco entre el contenido del párrafo y el borde derecho del contenedor, 
+        brindando un espaciado visual en esa dirección específica*/
+    }
+    .contact-item{
+        display: grid; /*se convierte en cuadricula*/
+        grid-template-columns: 10% 90%; /*Define el tamaño de las columnas en la cuadrícula. En este caso, se están especificando dos columnas.
+        La primera columna ocupa el 10% del ancho total, y la segunda ocupa el 90%*/
+        margin-bottom: 15px; /*Agrega un margen en la parte inferior del elemento. En este caso, hay un espacio de separación de 15px 
+        entre elementos con la clase .contact-item, proporcionando un espacio visual entre ellos.*/
+        align-items: center; /*Centra los elementos a lo largo del eje transversal (verticalmente) dentro del contenedor de cuadrícula. 
+        En este caso, los elementos se centran verticalmente en el espacio asignado por la cuadrícul*/
+    }
+}
+
